@@ -5,6 +5,7 @@ import { prompt } from './prompt.js';
 import { log } from '../utils/logger.js';
 import { addHistory } from '../db/history.js';
 import { thinkMessage } from '../utils/thinking.js';
+import { playAudio } from '../utils/audio-player.js';
 
 
 
@@ -14,11 +15,20 @@ export const askCommand = async (args: Arg[]) => {
         return;
     }
 
+
     const promptArg = args.find(arg => arg.isString);
     if (!promptArg) {
         log("Por favor, fornecer uma pergunta entre aspas.", colors.red);
         return;
     }
+
+
+
+    if (promptArg.value.toLowerCase().trim() === 'amoleça meu pinto') {
+        playAudio(__dirname, '../../jarvis.mp3');
+        return;
+    }
+
 
     const flag = args.find(arg => arg.isFlag);
     if (flag && flag.value === 'web-search') {

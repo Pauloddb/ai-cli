@@ -8,6 +8,7 @@ import readline from 'readline';
 import { parseArgs } from './cli/arg-parser.js';
 import chalk from 'chalk';
 import { colors } from './utils/tools.js';
+import { playAudio } from './utils/audio-player.js';
 
 
 
@@ -20,7 +21,9 @@ if (process.argv.slice(1).length > 1) {
 }
 
 
-const repeat = 90
+
+
+const repeat = 80
 for (let i = 0; i < repeat; i++) log('=', colors.blueBright, false);
 
 log('\nJarvis Assistente de IA. Pressione Ctrl+C ou use o comando "exit" para sair.', colors.blueBright);
