@@ -1,5 +1,5 @@
 import { askCommand } from "../ai/ai.js";
-import { Arg } from "./args.js";
+import { Arg } from './args.js';
 import { log } from "../utils/logger.js";
 import { clearHistory, getHistory } from "../db/history.js";
 import { colors, dateMessage } from "../utils/tools.js";

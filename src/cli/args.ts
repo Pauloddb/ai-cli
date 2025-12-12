@@ -2,8 +2,8 @@ import { isBetween } from "../utils/tools.js";
 
 
 export class Arg {
-    public isString: boolean;
-    public isFlag: boolean;
+    public isString: boolean = false;
+    public isFlag: boolean = false;
 
     constructor(public value: string) {
         this.value = value;

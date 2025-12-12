@@ -30,7 +30,7 @@ export const parseArgs = (args: string): Arg[] => {
                 parsedArgs.push(new Arg(current));
                 current = '';
             }
-            
+
             continue;
         } else {
             current += char;

@@ -1,1 +1,0 @@
-O que é uma requisição http, para que serve e como fazer uma em javascript?
