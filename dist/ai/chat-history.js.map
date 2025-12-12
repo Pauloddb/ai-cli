@@ -1,0 +1,1 @@
+{"version":3,"file":"chat-history.js","sourceRoot":"","sources":["../../src/ai/chat-history.ts"],"names":[],"mappings":"AAOA,MAAM,OAAO,WAAW;IACb,QAAQ,GAAsB,EAAE,CAAC;IAEjC,UAAU,CAAC,OAAwB;QACtC,IAAI,CAAC,QAAQ,CAAC,IAAI,CAAC,OAAO,CAAC,CAAC;IAChC,CAAC;CACJ"}
