@@ -33,6 +33,13 @@ const commands: Command[] = [
         log(history.map(message => {
             return `${dateMessage(message.timestamp)}: ${message.role} - ${message.content}`
         }).join('\n\n'), colors.blueBright);
+    }),
+    new Command('credits', 'Exibe os créditos do programa.', (args: Arg[]) => {
+        log(`
+Jarvis Assistente de IA
+Desenvolvido por Paulo Dias de Barros
+Github: https://github.com/Pauloddb
+        `, colors.blue);
     })
 ]
 
